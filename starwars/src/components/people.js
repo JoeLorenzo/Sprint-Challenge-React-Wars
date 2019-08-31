@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 
 
 function People(){
   return (
     <div>
-      <h2>Hello</h2>
+      <h2>Hello World</h2>
+      useEffect(() => {
+        axios.get("")
+        .then(res => {
+        console.log(res.data)
+  })
+}, [])
     </div>
   )
 }
