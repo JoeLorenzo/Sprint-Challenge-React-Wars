@@ -28,15 +28,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What does it mean to _think_ in react?
 
-    To me it means to think in individual components and how that component will change.
+    To me it means to think in individual components and how that component may change.
 
 - [ ] Describe state.
 
+    A state is the current data at one particular time.  In react a state has a defualt value and that can then change given a function for instance, such as an event listener.  
+
 - [ ] Describe props.
 
+    Props are simply parameters we pass to our components.  They are passed through a props object.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
+    Side effects are functions that run after something is rendered.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
