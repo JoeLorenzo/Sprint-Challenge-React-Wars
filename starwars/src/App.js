@@ -5,6 +5,22 @@ import People from './components/people'
 
 
 const App = () => {
+const [chars, setChars] = useState([])
+
+  useEffect(() => {
+    axios.get("https://swapi.co/api/people/")
+    .then(response => {
+      setChars(response.data.results);
+    }
+
+  ).catch( error => {
+    console.log('error')
+  }
+
+  )
+  },[]
+
+  )
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -16,12 +32,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <People url={apiUrl + "1"} />
-      <People url={apiUrl + "2"} />
-      <People url={apiUrl + "1"} />
-      <People url={apiUrl + "3"} />
-      <People url={apiUrl + "4"} />
-      <People url={apiUrl + "5"} />
+    {chars.map(char => <People character={char}/>)}
     </div>
   );
 }

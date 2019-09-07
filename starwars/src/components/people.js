@@ -11,24 +11,13 @@ color:blue;
 `
 
 function People(props){
-  const [charName, setCharName] = useState("")
-  const [charGender, setCharGender] = useState("")
-  const [birthYear, setBirthYear] = useState("")
 
-  useEffect( () => {
-    axios.get(props.url)
-    .then(res => {
-      setCharName(res.data.name)
-      setCharGender(res.data.gender)
-      setBirthYear(res.data.birth_year)
-    })
-  }, [])
 
   return (
     <div>
       <Jumbotron>
-      <NameTag> {charName} </NameTag>
-       <p> Gender: {charGender}, born in the year {birthYear}  </p>
+      <NameTag> {props.character.name} </NameTag>
+       <p> Gender: {props.character.gender}, born in the year {props.character.birth_year}  </p>
       </Jumbotron>
     </div>
   )
