@@ -28,12 +28,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What does it mean to _think_ in react?
 
+    To me it means to think in individual components and how that component may change.
+
 - [ ] Describe state.
+
+    A state is the current data at one particular time.  In react a state has a defualt value and that can then change given a function for instance, such as an event listener.  
 
 - [ ] Describe props.
 
+    Props are simply parameters we pass to our components.  They are passed through a props object.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
+    Side effects are functions that run after something is rendered.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
@@ -60,7 +67,7 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
